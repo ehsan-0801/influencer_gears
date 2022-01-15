@@ -171,3 +171,49 @@ h2 {
 .SeeMorebtn:hover {
   color: rgb(50, 190, 62);
 }
+/* ************************
+** third section styling **
+************************* */
+.third_section {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 100%;
+  height: 300px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.third_section h1 {
+  margin: 50px 35%;
+}
+.slider {
+  margin: 5% 10%;
+  animation: Sliding 10s linear infinite right;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+.bestProducts {
+  height: 160px;
+  width: 150px;
+  padding: 5px 5px;
+  border: 1px;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px rgb(226, 218, 218);
+  align-items: center;
+}
+.bestProducts img {
+  width: 100%;
+  margin: 0 auto;
+  height: 140px;
+}
