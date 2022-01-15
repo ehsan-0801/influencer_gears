@@ -13,7 +13,7 @@ body {
   font-weight: 600;
   display: flex;
   align-items: center;
-  margin: 2% 10%;
+  margin: 1% 10%;
   position: relative;
   color: #3a3a3a;
 }
@@ -42,7 +42,7 @@ body {
  -------------------- */
 
 .first_section {
-  margin: 10% 10%;
+  margin: 1% 10%;
 }
 /*------- box1 Styling------- */
 .box1 {
@@ -59,6 +59,14 @@ body {
   font-weight: 600;
   font-size: 16px;
   color: #3a3a3a;
+}
+.container1 .btn1 {
+  margin-top: 500px;
+  text-decoration: none;
+  background: #e02c6d;
+  color: white;
+  border-radius: 41px;
+  padding: 10px 20px;
 }
 
 /*------- background of camera------- */
@@ -77,6 +85,19 @@ body {
   position: absolute;
   width: 440px;
   height: 414px;
-  left: -5px;
+  left: 20px;
   top: 20px;
+}
+.brands {
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  align-items: center;
+  margin-top: 3%;
+}
+.brand_items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.brand_items li {
+  list-style: none;
 }
