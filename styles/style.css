@@ -4,8 +4,43 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
-  font-family: "Vujahday Script", cursive;
 }
+/*---------------------
+ Header section Styling
+ -------------------- */
+.navbar {
+  font-family: "Poppins";
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 2% 10%;
+  position: relative;
+  color: #3a3a3a;
+}
+.navbar .logo {
+  padding: 10px 2px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  position: relative;
+  left: 110%;
+}
+.navbar ul li {
+  padding: 10px 20px;
+}
+.navbar .shopping_cart {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  color: #000000;
+  padding: 10px 20px;
+}
+
+/*---------------------
+ first section Styling
+ -------------------- */
+
 .first_section {
   margin: 10% 10%;
 }
