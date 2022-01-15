@@ -29,12 +29,33 @@ body {
 .navbar ul li {
   padding: 10px 20px;
 }
+.navbar ul li:hover {
+  background: rgb(219, 210, 210);
+  opacity: 0.8;
+  cursor: pointer;
+  border: 2px;
+  border-radius: 4px;
+}
+.navbar .logo:hover {
+  background: rgb(219, 210, 210);
+  opacity: 0.8;
+  cursor: pointer;
+  border: 2px;
+  border-radius: 4px;
+}
 .navbar .shopping_cart {
   position: absolute;
   right: 0;
   font-size: 25px;
   color: #000000;
   padding: 10px 20px;
+}
+.navbar .shopping_cart:hover {
+  background: rgb(219, 210, 210);
+  opacity: 0.8;
+  cursor: pointer;
+  border: 2px;
+  border-radius: 4px;
 }
 
 /*---------------------
@@ -59,6 +80,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   color: #3a3a3a;
+  margin-bottom: 30px;
 }
 .container1 .btn1 {
   margin-top: 500px;
@@ -100,4 +122,52 @@ body {
 }
 .brand_items li {
   list-style: none;
+}
+/* ************************
+** second section styling **
+************************* */
+
+.second_section {
+  margin: 10% 10% 7% 10%;
+  position: relative;
+}
+h2 {
+  font-size: 28px;
+  margin-left: 38%;
+}
+.cards {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards .card {
+  width: 329px;
+  height: 476px;
+  border: 1px;
+  padding: 15px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 10px 15px rgb(192, 183, 183);
+}
+.cards .card img {
+  width: 100%;
+}
+#filled {
+  color: #ffc014;
+}
+.product_info span {
+  margin-left: 15px;
+}
+.SeeMorebtn {
+  position: absolute;
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 20px;
+  right: 50px;
+  margin-top: 10px;
+  border-radius: 0px;
+}
+.SeeMorebtn:hover {
+  color: rgb(50, 190, 62);
 }
