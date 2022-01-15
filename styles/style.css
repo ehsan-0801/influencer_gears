@@ -81,9 +81,26 @@ body {
 }
 /*----- container1 styling----- */
 .container1 .heading {
-  font-weight: bolder;
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    #3a3a3a 40%,
+    rgb(61, 14, 148) 60%,
+    #fff 80%
+  );
+  background-size: 200% auto;
   font-size: 52px;
-  color: #3a3a3a;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: ColorGradient 10s linear infinite;
+}
+@keyframes ColorGradient {
+  to {
+    background-position: 200% center;
+  }
 }
 .container1 .msg1 {
   font-weight: 600;
@@ -97,6 +114,14 @@ body {
   color: white;
   border-radius: 41px;
   padding: 10px 20px;
+}
+.container1 .btn1:hover {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
 }
 
 /*------- background of camera------- */
@@ -255,7 +280,9 @@ body {
   left: 41%;
   top: 35%;
 }
-
+/* **********************
+**media Query begining***
+********************* */
 @media only screen and (max-width: 688px) {
   .checkbtn {
     font-size: 30px;
@@ -283,6 +310,9 @@ body {
   }
   #check:checked ~ .menu ul {
     left: 0%;
+  }
+  .navbar .logo {
+    margin-left: 30px;
   }
   .first_section .box1 {
     display: flex;
@@ -426,6 +456,10 @@ body {
     font-size: 20px;
     display: block;
   }
+  .navbar .logo {
+    margin-left: 100px;
+    font-size: 30px;
+  }
   #check:checked ~ .menu ul {
     left: 0%;
   }
@@ -546,31 +580,7 @@ body {
     top: 35%;
   }
 }
-/* @media (max-width: 992px) {
-  .checkbtn {
-    font-size: 30px;
-    color: #3a3a3a;
-    float: left;
-    cursor: pointer;
-    display: block;
-  }
-  .menu ul {
-    position: fixed;
-    top: 30px;
-    left: -100%;
-    background: navy;
-    height: 100vh;
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-left: -35px;
-  }
-  .menu ul li {
-    margin: 40px 0;
-    font-size: 20px;
-    display: block;
-  }
-  #check:checked ~ .menu ul {
-    left: 0%;
-  }
-} */
+
+/* **********************
+**media Query finishing***
+********************* */
